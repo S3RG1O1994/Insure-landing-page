@@ -1,0 +1,97 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+		link(rel='stylesheet', href="styles/styles.css")
+		title Frontend Mentor | Insure landing page
+
+	style
+		.attribution { font-size: 11px; text-align: center; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+	
+	body
+		header
+			.logo_company--header
+			ul(class="navigation_bar")
+				each item in ['How we work', 'Blog', 'Account', 'View plans']
+					li(class="navigation_bar--item")
+						a(href="#")= item
+		.first_section--wrapper
+			.first_section--wrapper_content
+				h1 Humanizing your insurance.
+				p.
+					Get your life insurance coverage easier and faster. We blend our expertise 
+					and technology to help you find the plan that’s right for you. Ensure you 
+					and your loved ones are protected.
+				button(class="button--view") View plans
+				img(src="images/image-intro-desktop.jpg")
+		.second_section--wrapper
+			.second_section--wrapper_content
+				h2 We’re different
+				.second_section--wrapper_content-two
+					.item-card
+						img(src="images/icon-snappy-process.svg")
+						h4 Snappy Process
+						p.
+							Our application process can be completed in minutes, not hours. Don’t get 
+							stuck filling in tedious forms.
+					.item-card
+						img(src="images/icon-affordable-prices.svg")
+						h4 Affordable Prices
+						p.
+							We don’t want you worrying about high monthly costs. Our prices may be low, 
+							but we still offer the best coverage possible.
+					.item-card
+						img(src="images/icon-people-first.svg")
+						h4 People First
+						p.
+							Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+							sure you’re covered when you need it.
+
+		.three_section
+			.three_section--content
+				h2 Find out more about how we work 
+				button(class="button--view") How we work
+
+		footer
+			.content-footer
+				.profiles_wrapper
+					.logo_company--footer
+					.profiles_wrapper--icons
+						a(href="#")
+							.profiles_wrapper--icons_facebook
+						a(href="#")
+							.profiles_wrapper--icons_twitter
+						a(href="#")
+							.profiles_wrapper--icons_pinterest
+						a(href="#")
+							.profiles_wrapper--icons_instagram
+				.links_wrapper
+					.links_wrapper--items
+						h5 Our company
+						each items in ['How we work', 'Why Insure?', 'View plans', 'Reviews']
+							li 
+								a(href="#")= items
+					.links_wrapper--items
+						h5 Help me
+						each items in ['FAQ', 'Terms Of use', 'Privacy policy', 'Cookies']
+							li 
+								a(href="#")= items
+					.links_wrapper--items
+						h5 Contact
+						each items in ['Sales', 'Support', 'Live chat']
+							li 
+								a(href="#")= items
+					.links_wrapper--items
+						h5 Others
+						each items in ['Careers', 'Support', 'Licenses']
+							li 
+								a(href="#")= items
+					
+				div(class="attribution")
+					span Challenge by 
+					a(href="https://www.frontendmentor.io?ref=challenge" target="_blank") Frontend Mentor and 
+					span Coded by 
+					a(href="https://www.linkedin.com/in/sergio-diaz-54087018a/") Sergio E Diaz.

@@ -1,0 +1,33 @@
+header
+		width: 80%
+		height: 110px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		.logo_company--header
+			width: 120px
+			height: 100%
+			background-image: url(../images/logo.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position-y: center
+		.navigation_bar
+			display: flex
+			&--item
+				text-transform: uppercase
+				list-style: none
+				margin: auto 15px
+				padding: 15px
+				a
+					color: $neutral_grayish_violet
+					text-decoration: none
+				&:nth-child(4)
+					border: 1px solid $neutral_violet
+					opacity: 0.7
+					&:hover		
+						color: $neutral_violet
+						cursor: pointer
+						opacity: 1
+						transition-property: color
+						transition-duration: 0.5s
+						transition-delay: 0.2s

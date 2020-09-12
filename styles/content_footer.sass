@@ -1,0 +1,83 @@
+footer
+	background-color: $neutral_gray
+	height: 400px
+	&::before
+		content: ""
+		position: absolute
+		width: 456px
+		height: 199px
+		background-image: url(../images/bg-pattern-footer-desktop.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		left: 0
+	.content-footer
+		width: 80%
+		margin: 0 auto
+		.profiles_wrapper
+			height: 100px
+			display: flex
+			justify-content: space-between
+			align-items: end
+			border-bottom: 1px solid #9e9aa257
+			.logo_company--footer
+				width: 120px
+				height: 70%
+				background-image: url(../images/logo.svg)
+				background-repeat: no-repeat
+				background-size: contain
+				background-position-y: center
+			.profiles_wrapper--icons
+				height: 50%
+				column-count: 4
+				margin-top: 3%
+				.profiles_wrapper--icons_facebook
+					width: 30px
+					height: 30px
+					background-image: url(../images/icon-facebook.svg)
+					background-repeat: no-repeat
+					background-size: contain
+				.profiles_wrapper--icons_twitter
+					width: 30px
+					height: 30px
+					background-image: url(../images/icon-twitter.svg)
+					background-repeat: no-repeat
+					background-size: contain
+				.profiles_wrapper--icons_pinterest
+					width: 30px
+					height: 30px
+					background-image: url(../images/icon-pinterest.svg)
+					background-repeat: no-repeat
+					background-size: contain
+				.profiles_wrapper--icons_instagram
+					width: 30px
+					height: 30px
+					background-image: url(../images/icon-instagram.svg)
+					background-repeat: no-repeat
+					background-size: contain
+
+		.links_wrapper
+			display: flex
+			margin-bottom: 2%
+			&--items
+				width: 25%
+				h5
+					color: $neutral_violet
+					opacity: 0.5
+					font-size: 18px
+				li
+					list-style: none
+					opacity: 0.8
+					font-weight: bold
+					text-transform: uppercase
+					line-height: 30px
+					a
+						color: $neutral_violet
+						text-decoration: none
+		.attribution
+			height: 10%
+			text-align: center
+			color: $neutral_grayish_violet
+			padding-top:2%
+			a
+				text-decoration: none
+				color: $primary_violet

@@ -1,0 +1,7 @@
+/*Variables breakpoints*/
+/*Settings responsive*/
+@media (min-width: 992px) {
+  .first_section--wrapper_content.img-family {
+    width: 120%;
+  }
+}

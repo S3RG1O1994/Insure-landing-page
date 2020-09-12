@@ -1,0 +1,49 @@
+.first_section--wrapper
+		background-color: $primary_violet
+		padding: 7% 0
+		height: 400px
+		&::before
+			content: ""
+			position: absolute
+			width: 433px
+			height: 589px
+			background-image: url(../images/bg-pattern-intro-right-desktop.svg)
+			background-repeat: no-repeat
+			background-size: cover
+			top: 111px
+			right: 0
+			@media (max-width: $mini-tablet)
+				width: 222px
+				height: 333px
+		&::after
+			content: ""
+			position: absolute
+			width: 220px
+			height: 444px
+			background-image: url(../images/bg-pattern-intro-left-desktop.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			top: 505px
+			left: 0
+			@media (max-width: $mini-tablet)
+			width: 119px
+			height: 254px
+		&_content
+			width:80%
+			margin: 0 auto
+			column-count: 2
+			@media (max-width: $mini-tablet)
+				h1
+					font-size: 60px
+			p
+				color: $neutral_gray
+				line-height: 27px
+			.button--view
+				color:$neutral_gray
+				padding: 15px
+				border: 1px solid $neutral_gray
+				background: transparent
+				cursor: pointer
+			@media (max-width: $tablet)
+				.img-family
+					width:120%

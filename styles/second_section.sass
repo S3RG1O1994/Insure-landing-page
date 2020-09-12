@@ -1,0 +1,28 @@
+.second_section--wrapper
+		margin-top: 20%
+		&_content
+			width: 80%
+			margin: 0 auto
+			h2
+				position: relative
+				font-size: 64px
+				font-family: DM Serif Display
+				letter-spacing: -4px
+				@media (max-width: $mini-tablet)
+					font-size: 54px
+				&::before
+					content: "_____"
+					position: absolute
+					bottom: 150%
+					left: 0
+			&-two
+				column-count: 3
+				column-gap: 4%
+				.item-card
+					h4
+						font-size: 27px
+						font-weight: bold
+						letter-spacing: -1px
+					p
+						color: $neutral_grayish_violet
+						line-height: 20px

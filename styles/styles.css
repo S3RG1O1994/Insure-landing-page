@@ -1,5 +1,6 @@
 /*Variables*/
 /*fonts*/
+/*Variables breakpoints*/
 @font-face {
   font-family: "DM Serif Display";
   font-family-src: local("DM Serif Display");
@@ -40,6 +41,7 @@ body {
   font-family: Karla;
   font-size: 16px;
   max-width: 100%;
+  /*General styles*/
 }
 body h1 {
   position: relative;
@@ -111,6 +113,12 @@ body .first_section--wrapper::before {
   top: 111px;
   right: 0;
 }
+@media (max-width: 769px) {
+  body .first_section--wrapper::before {
+    width: 222px;
+    height: 333px;
+  }
+}
 body .first_section--wrapper::after {
   content: "";
   position: absolute;
@@ -121,11 +129,18 @@ body .first_section--wrapper::after {
   background-size: contain;
   top: 505px;
   left: 0;
+  width: 119px;
+  height: 254px;
 }
 body .first_section--wrapper_content {
   width: 80%;
   margin: 0 auto;
   column-count: 2;
+}
+@media (max-width: 769px) {
+  body .first_section--wrapper_content h1 {
+    font-size: 60px;
+  }
 }
 body .first_section--wrapper_content p {
   color: #fafafa;
@@ -137,6 +152,11 @@ body .first_section--wrapper_content .button--view {
   border: 1px solid #fafafa;
   background: transparent;
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  body .first_section--wrapper_content .img-family {
+    width: 120%;
+  }
 }
 body .second_section--wrapper {
   margin-top: 20%;
@@ -150,6 +170,11 @@ body .second_section--wrapper_content h2 {
   font-size: 64px;
   font-family: DM Serif Display;
   letter-spacing: -4px;
+}
+@media (max-width: 769px) {
+  body .second_section--wrapper_content h2 {
+    font-size: 54px;
+  }
 }
 body .second_section--wrapper_content h2::before {
   content: "_____";
@@ -183,6 +208,11 @@ body .three_section--content {
   padding-top: 3%;
   column-count: 2;
 }
+@media (max-width: 769px) {
+  body .three_section--content {
+    width: 80%;
+  }
+}
 body .three_section--content::after {
   content: "";
   position: absolute;
@@ -201,6 +231,11 @@ body .three_section--content h2 {
   letter-spacing: -1px;
   line-height: 77%;
 }
+@media (max-width: 769px) {
+  body .three_section--content {
+    font-size: 40px;
+  }
+}
 body .three_section--content .button--view {
   float: inline-end;
   margin-top: 14%;
@@ -209,6 +244,11 @@ body .three_section--content .button--view {
   border: 1px solid #fafafa;
   background: transparent;
   cursor: pointer;
+}
+@media (max-width: 769px) {
+  body .three_section--content {
+    align-self: center;
+  }
 }
 body footer {
   background-color: #fafafa;

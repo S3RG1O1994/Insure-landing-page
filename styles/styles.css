@@ -63,6 +63,7 @@ body header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 body header .logo_company--header {
   width: 120px;
@@ -75,19 +76,66 @@ body header .logo_company--header {
 body header .navigation_bar {
   display: flex;
 }
+@media (max-width: 769px) {
+  body header .navigation_bar {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 20%;
+    right: 0;
+    background: #2b272f;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    transition-property: display;
+    transition-duration: 2s;
+    transition-delay: 1s;
+  }
+}
 body header .navigation_bar--item {
   text-transform: uppercase;
   list-style: none;
   margin: auto 15px;
   padding: 15px;
 }
+@media (max-width: 991px) {
+  body header .navigation_bar--item {
+    padding: 10px;
+  }
+}
+@media (max-width: 991px) {
+  body header .navigation_bar--item {
+    padding: 8px;
+  }
+}
+@media (max-width: 769px) {
+  body header .navigation_bar--item {
+    text-align: center;
+    margin: 4% auto;
+  }
+  body header .navigation_bar--item:nth-child(4) {
+    border: 1px solid #fafafa;
+    opacity: 0.7;
+  }
+}
 body header .navigation_bar--item a {
   color: #837d87;
   text-decoration: none;
 }
+@media (max-width: 991px) {
+  body header .navigation_bar--item a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 769px) {
+  body header .navigation_bar--item a {
+    color: #fafafa;
+  }
+}
 body header .navigation_bar--item:nth-child(4) {
-  border: 1px solid #2b272f;
+  border: 1px solid #fafafa;
   opacity: 0.7;
+  width: 88%;
 }
 body header .navigation_bar--item:nth-child(4):hover {
   color: #2b272f;
@@ -96,6 +144,19 @@ body header .navigation_bar--item:nth-child(4):hover {
   transition-property: color;
   transition-duration: 0.5s;
   transition-delay: 0.2s;
+}
+body header .input-check {
+  display: none;
+}
+body header .menu-items {
+  width: 43px;
+  height: 43px;
+  background-image: url("../images/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header .menu-items:hover {
+  cursor: pointer;
 }
 body .first_section--wrapper {
   background-color: #2d2640;

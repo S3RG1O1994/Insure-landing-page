@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="js/scripts.js"></script>
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <style>
@@ -20,6 +22,8 @@
         <li class="navigation_bar--item"><a href="#">Account</a></li>
         <li class="navigation_bar--item"><a href="#">View plans</a></li>
       </ul>
+      <input class="input-check" type="checkbox" name="menu-items">
+      <label class="menu-items" for="menu_items" id="menu-items"></label>
     </header>
     <div class="first_section--wrapper">
       <div class="first_section--wrapper_content">
@@ -29,7 +33,7 @@
           and technology to help you find the plan that’s right for you. Ensure you 
           and your loved ones are protected.
         </p>
-        <button class="button--view">View plans</button><img src="images/image-intro-desktop.jpg">
+        <button class="button--view">View plans</button><img class="img-family" src="images/image-intro-desktop.jpg">
       </div>
     </div>
     <div class="second_section--wrapper">
@@ -63,7 +67,7 @@
     </div>
     <div class="three_section">
       <div class="three_section--content">
-        <h2>Find out more about how we work </h2>
+        <h2 class="size">Find out more about how we work </h2>
         <button class="button--view">How we work</button>
       </div>
     </div>

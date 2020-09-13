@@ -5,6 +5,8 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
 		link(rel='stylesheet', href="styles/styles.css")
+		link(rel='stylesheet', href="styles/responsive.css")
+		script(src='js/scripts.js')
 		title Frontend Mentor | Insure landing page
 
 	style
@@ -18,6 +20,8 @@ html(lang="en")
 				each item in ['How we work', 'Blog', 'Account', 'View plans']
 					li(class="navigation_bar--item")
 						a(href="#")= item
+			input(class="input-check" type='checkbox' name='menu-items')
+			label(for='menu_items' class="menu-items" id="menu-items")
 		.first_section--wrapper
 			.first_section--wrapper_content
 				h1 Humanizing your insurance.
@@ -26,7 +30,7 @@ html(lang="en")
 					and technology to help you find the plan that’s right for you. Ensure you 
 					and your loved ones are protected.
 				button(class="button--view") View plans
-				img(src="images/image-intro-desktop.jpg")
+				img(class="img-family" src="images/image-intro-desktop.jpg")
 		.second_section--wrapper
 			.second_section--wrapper_content
 				h2 We’re different
@@ -52,7 +56,7 @@ html(lang="en")
 
 		.three_section
 			.three_section--content
-				h2 Find out more about how we work 
+				h2(class="size") Find out more about how we work 
 				button(class="button--view") How we work
 
 		footer

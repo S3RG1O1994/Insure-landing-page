@@ -4,6 +4,8 @@
 		height: 200px
 		background: $primary_violet
 		position: relative
+		@media (max-width: $bg-movile)
+			width:100%
 		&--content
 			width: 75%
 			margin: 0 auto
@@ -21,6 +23,9 @@
 				background-size: cover
 				top: 0
 				right: 0
+				@media (max-width: $mini-tablet)
+					width: 285px
+					height: 198px
 			h2
 				color: $neutral_gray
 				font-family: DM Serif Display
@@ -30,7 +35,7 @@
 				@media (max-width: $mini-tablet)
 					font-size: 40px
 			.button--view
-				float: inline-end
+				float: right
 				margin-top: 14%
 				color:$neutral_gray
 				padding: 10px 35px

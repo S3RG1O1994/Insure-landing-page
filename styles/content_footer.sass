@@ -1,6 +1,8 @@
 footer
 	background-color: $neutral_gray
 	height: 400px
+	@media (max-width: $bg-movile)
+		height: 534px
 	&::before
 		content: ""
 		position: absolute
@@ -10,6 +12,9 @@ footer
 		background-repeat: no-repeat
 		background-size: cover
 		left: 0
+		@media (max-width: $mini_tablet)
+			width: 335px
+			height: 148px
 	.content-footer
 		width: 80%
 		margin: 0 auto
@@ -18,6 +23,7 @@ footer
 			display: flex
 			justify-content: space-between
 			align-items: end
+			-webkit-align-items: flex-end
 			border-bottom: 1px solid #9e9aa257
 			.logo_company--footer
 				width: 120px
@@ -30,36 +36,32 @@ footer
 				height: 50%
 				column-count: 4
 				margin-top: 3%
-				.profiles_wrapper--icons_facebook
+				.profiles_wrapper--icons_facebook, .profiles_wrapper--icons_twitter,
+				.profiles_wrapper--icons_pinterest, .profiles_wrapper--icons_instagram
 					width: 30px
 					height: 30px
 					background-image: url(../images/icon-facebook.svg)
 					background-repeat: no-repeat
 					background-size: contain
 				.profiles_wrapper--icons_twitter
-					width: 30px
-					height: 30px
 					background-image: url(../images/icon-twitter.svg)
-					background-repeat: no-repeat
-					background-size: contain
 				.profiles_wrapper--icons_pinterest
-					width: 30px
-					height: 30px
 					background-image: url(../images/icon-pinterest.svg)
-					background-repeat: no-repeat
-					background-size: contain
 				.profiles_wrapper--icons_instagram
-					width: 30px
-					height: 30px
 					background-image: url(../images/icon-instagram.svg)
-					background-repeat: no-repeat
-					background-size: contain
 
 		.links_wrapper
 			display: flex
 			margin-bottom: 2%
+			justify-content: space-between
+			flex-wrap: wrap
 			&--items
 				width: 25%
+				@media (max-width: $mini-tablet)
+					width: 25%
+				@media (max-width: $bg-movile)
+					width: 50%
+					text-align: center
 				h5
 					color: $neutral_violet
 					opacity: 0.5

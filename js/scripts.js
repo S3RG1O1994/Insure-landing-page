@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
-	var elm = document.querySelector('#menu-items');
-    elm.addEventListener('click', (elm)=>{
-		if (elm.style.display === 'none')
-		{
-			console.log('soy none');
-		}
+	const elm = document.querySelector('#menu-items');
+    elm.addEventListener('click', ()=>{
+		const menuElm = document.querySelector('#navigation_bar')
+		menuElm.classList.toggle("navigation_bar_rsp");
 	})
 });

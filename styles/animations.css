@@ -1,0 +1,11 @@
+/*Animations*/
+@keyframes rightMenu {
+  0% {
+    display: none;
+    right: -200%;
+  }
+  100% {
+    display: flex;
+    right: -13%;
+  }
+}

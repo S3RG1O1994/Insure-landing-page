@@ -42,6 +42,7 @@ body {
   font-size: 16px;
   max-width: 100%;
   /*General styles*/
+  /*Animations*/
 }
 body h1 {
   position: relative;
@@ -57,13 +58,21 @@ body h1::before {
   bottom: 150%;
   left: 0;
 }
+@keyframes rightMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body header {
   width: 80%;
   height: 110px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 body header .logo_company--header {
   width: 120px;
@@ -81,15 +90,12 @@ body header .navigation_bar {
     display: none;
     position: absolute;
     flex-direction: column;
-    top: 20%;
-    right: 0;
+    top: 85%;
+    right: -13%;
     background: #2b272f;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: 2;
-    transition-property: display;
-    transition-duration: 2s;
-    transition-delay: 1s;
   }
 }
 body header .navigation_bar--item {
@@ -135,7 +141,11 @@ body header .navigation_bar--item a {
 body header .navigation_bar--item:nth-child(4) {
   border: 1px solid #fafafa;
   opacity: 0.7;
-  width: 88%;
+}
+@media (max-width: 769px) {
+  body header .navigation_bar--item:nth-child(4) {
+    width: 88%;
+  }
 }
 body header .navigation_bar--item:nth-child(4):hover {
   color: #2b272f;
@@ -145,18 +155,28 @@ body header .navigation_bar--item:nth-child(4):hover {
   transition-duration: 0.5s;
   transition-delay: 0.2s;
 }
+body header .navigation_bar_rsp {
+  display: flex;
+}
 body header .input-check {
   display: none;
 }
 body header .menu-items {
-  width: 43px;
-  height: 43px;
-  background-image: url("../images/icon-hamburger.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: none;
 }
-body header .menu-items:hover {
-  cursor: pointer;
+@media (max-width: 769px) {
+  body header .menu-items {
+    display: flex;
+    width: 43px;
+    height: 43px;
+    background-image: url("../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto 0;
+  }
+  body header .menu-items:hover {
+    cursor: pointer;
+  }
 }
 body .first_section--wrapper {
   background-color: #2d2640;
@@ -271,7 +291,7 @@ body .three_section--content {
 }
 @media (max-width: 769px) {
   body .three_section--content {
-    width: 80%;
+    width: 85%;
   }
 }
 body .three_section--content::after {
@@ -293,7 +313,7 @@ body .three_section--content h2 {
   line-height: 77%;
 }
 @media (max-width: 769px) {
-  body .three_section--content {
+  body .three_section--content h2 {
     font-size: 40px;
   }
 }

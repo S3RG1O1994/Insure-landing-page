@@ -6,6 +6,8 @@
 		position: relative
 		@media (max-width: $bg-movile)
 			width:100%
+		@media (max-width: $movile)
+			height: 254px
 		&--content
 			width: 75%
 			margin: 0 auto
@@ -13,6 +15,11 @@
 			column-count: 2
 			@media (max-width: $mini-tablet)
 				width: 85%
+			@media (max-width: $movile)
+				display: flex
+				flex-direction: column
+				column-count: 0
+				padding-top: 1%
 			&::after
 				content: ""
 				position: absolute
@@ -42,5 +49,8 @@
 				border: 1px solid $neutral_gray
 				background: transparent
 				cursor: pointer
+				@media (max-width: $movile)
+					width: 200px
+					margin: 0 auto
 			@media (max-width: $mini-tablet)
 				align-self: center

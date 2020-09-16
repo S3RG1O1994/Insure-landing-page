@@ -15,6 +15,9 @@ footer
 		@media (max-width: $mini_tablet)
 			width: 335px
 			height: 148px
+		@media (max-width: $movile)
+			width: 322px
+			height: 137px
 	.content-footer
 		width: 80%
 		margin: 0 auto
@@ -25,6 +28,9 @@ footer
 			align-items: end
 			-webkit-align-items: flex-end
 			border-bottom: 1px solid #9e9aa257
+			@media (max-width: $movile)
+				flex-direction: column
+				-webkit-align-items: center
 			.logo_company--footer
 				width: 120px
 				height: 70%
@@ -62,6 +68,8 @@ footer
 				@media (max-width: $bg-movile)
 					width: 50%
 					text-align: center
+				@media (max-width: $movile)
+					width: 100%
 				h5
 					color: $neutral_violet
 					opacity: 0.5
@@ -80,6 +88,9 @@ footer
 			text-align: center
 			color: $neutral_grayish_violet
 			padding-top:2%
+			@media (max-width: $movile)
+				padding-top: 5%
+				padding-bottom: 5%
 			a
 				text-decoration: none
 				color: $primary_violet

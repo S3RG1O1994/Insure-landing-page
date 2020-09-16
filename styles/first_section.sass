@@ -4,6 +4,9 @@
 		height: 400px
 		@media (max-width: $bg-movile)
 			height: 700px
+		@media (max-width: $movile)
+			height: 760px
+			padding: 0
 		&::before
 			content: ""
 			position: absolute
@@ -39,6 +42,10 @@
 				flex-direction: column-reverse
 				column-count: auto
 				text-align: center
+			@media (max-width: $movile)
+				&--info
+					width: 90%
+					margin: 0 auto
 			@media (max-width: $mini-tablet)
 				h1
 					font-size: 60px
@@ -46,6 +53,11 @@
 				h1
 					font-size: 55px
 					margin-top: 30px
+			@media (max-width: $movile)
+				h1
+					font-size: 50px
+			@media (max-width: $bg-movile)
+				width: 100%
 			p
 				color: $neutral_gray
 				line-height: 27px
@@ -62,3 +74,7 @@
 				.img-family
 					width: 70%
 					margin: 0 auto 5px
+			@media (max-width: $movile)
+				.img-family
+					width: 100%
+					margin: 0

@@ -193,6 +193,12 @@ body .first_section--wrapper {
     height: 700px;
   }
 }
+@media (max-width: 322px) {
+  body .first_section--wrapper {
+    height: 760px;
+    padding: 0;
+  }
+}
 body .first_section--wrapper::before {
   content: "";
   position: absolute;
@@ -236,6 +242,12 @@ body .first_section--wrapper_content {
     text-align: center;
   }
 }
+@media (max-width: 322px) {
+  body .first_section--wrapper_content--info {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 769px) {
   body .first_section--wrapper_content h1 {
     font-size: 60px;
@@ -245,6 +257,16 @@ body .first_section--wrapper_content {
   body .first_section--wrapper_content h1 {
     font-size: 55px;
     margin-top: 30px;
+  }
+}
+@media (max-width: 322px) {
+  body .first_section--wrapper_content h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 547px) {
+  body .first_section--wrapper_content {
+    width: 100%;
   }
 }
 body .first_section--wrapper_content p {
@@ -269,6 +291,12 @@ body .first_section--wrapper_content .button--view {
     margin: 0 auto 5px;
   }
 }
+@media (max-width: 322px) {
+  body .first_section--wrapper_content .img-family {
+    width: 100%;
+    margin: 0;
+  }
+}
 body .second_section--wrapper {
   margin-top: 20%;
 }
@@ -287,11 +315,23 @@ body .second_section--wrapper_content h2 {
     font-size: 54px;
   }
 }
+@media (max-width: 322px) {
+  body .second_section--wrapper_content h2 {
+    font-size: 43px;
+    text-align: center;
+    letter-spacing: -2px;
+  }
+}
 body .second_section--wrapper_content h2::before {
   content: "_____";
   position: absolute;
   bottom: 150%;
   left: 0;
+}
+@media (max-width: 322px) {
+  body .second_section--wrapper_content h2::before {
+    bottom: 112%;
+  }
 }
 body .second_section--wrapper_content-two {
   display: flex;
@@ -305,6 +345,11 @@ body .second_section--wrapper_content-two .item-card {
   body .second_section--wrapper_content-two .item-card {
     width: 50%;
     text-align: center;
+  }
+}
+@media (max-width: 322px) {
+  body .second_section--wrapper_content-two .item-card {
+    width: 100%;
   }
 }
 body .second_section--wrapper_content-two .item-card h4 {
@@ -333,6 +378,11 @@ body .three_section {
     width: 100%;
   }
 }
+@media (max-width: 322px) {
+  body .three_section {
+    height: 254px;
+  }
+}
 body .three_section--content {
   width: 75%;
   margin: 0 auto;
@@ -342,6 +392,14 @@ body .three_section--content {
 @media (max-width: 769px) {
   body .three_section--content {
     width: 85%;
+  }
+}
+@media (max-width: 322px) {
+  body .three_section--content {
+    display: flex;
+    flex-direction: column;
+    column-count: 0;
+    padding-top: 1%;
   }
 }
 body .three_section--content::after {
@@ -382,6 +440,12 @@ body .three_section--content .button--view {
   background: transparent;
   cursor: pointer;
 }
+@media (max-width: 322px) {
+  body .three_section--content .button--view {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 769px) {
   body .three_section--content {
     align-self: center;
@@ -412,6 +476,12 @@ body footer::before {
     height: 148px;
   }
 }
+@media (max-width: 322px) {
+  body footer::before {
+    width: 322px;
+    height: 137px;
+  }
+}
 body footer .content-footer {
   width: 80%;
   margin: 0 auto;
@@ -423,6 +493,12 @@ body footer .content-footer .profiles_wrapper {
   align-items: end;
   -webkit-align-items: flex-end;
   border-bottom: 1px solid #9e9aa257;
+}
+@media (max-width: 322px) {
+  body footer .content-footer .profiles_wrapper {
+    flex-direction: column;
+    -webkit-align-items: center;
+  }
 }
 body footer .content-footer .profiles_wrapper .logo_company--footer {
   width: 120px;
@@ -474,6 +550,11 @@ body footer .content-footer .links_wrapper--items {
     text-align: center;
   }
 }
+@media (max-width: 322px) {
+  body footer .content-footer .links_wrapper--items {
+    width: 100%;
+  }
+}
 body footer .content-footer .links_wrapper--items h5 {
   color: #2b272f;
   opacity: 0.5;
@@ -495,6 +576,12 @@ body footer .content-footer .attribution {
   text-align: center;
   color: #837d87;
   padding-top: 2%;
+}
+@media (max-width: 322px) {
+  body footer .content-footer .attribution {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 body footer .content-footer .attribution a {
   text-decoration: none;

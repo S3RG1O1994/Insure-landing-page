@@ -10,11 +10,17 @@
 				letter-spacing: -4px
 				@media (max-width: $mini-tablet)
 					font-size: 54px
+				@media (max-width: $movile)
+					font-size: 43px
+					text-align: center
+					letter-spacing: -2px
 				&::before
 					content: "_____"
 					position: absolute
 					bottom: 150%
 					left: 0
+					@media (max-width: $movile)
+						bottom: 112%
 			&-two
 				display: flex
 				flex-wrap: wrap
@@ -26,6 +32,8 @@
 					@media (max-width: $bg-movile)
 						width: 50%
 						text-align: center
+					@media (max-width: $movile)
+						width:100%
 					h4
 						font-size: 27px
 						font-weight: bold

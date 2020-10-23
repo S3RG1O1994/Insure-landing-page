@@ -162,6 +162,7 @@ body header .navigation_bar--item:nth-child(4):hover {
 }
 body header .navigation_bar_rsp {
   display: flex;
+  transition: all 0.3s easy-out;
 }
 body header .input-check {
   display: none;
@@ -193,9 +194,9 @@ body .first_section--wrapper {
     height: 700px;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .first_section--wrapper {
-    height: 760px;
+    height: 800px;
     padding: 0;
   }
 }
@@ -242,7 +243,7 @@ body .first_section--wrapper_content {
     text-align: center;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .first_section--wrapper_content--info {
     width: 90%;
     margin: 0 auto;
@@ -259,7 +260,7 @@ body .first_section--wrapper_content {
     margin-top: 30px;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .first_section--wrapper_content h1 {
     font-size: 50px;
   }
@@ -291,7 +292,7 @@ body .first_section--wrapper_content .button--view {
     margin: 0 auto 5px;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .first_section--wrapper_content .img-family {
     width: 100%;
     margin: 0;
@@ -315,7 +316,7 @@ body .second_section--wrapper_content h2 {
     font-size: 54px;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .second_section--wrapper_content h2 {
     font-size: 43px;
     text-align: center;
@@ -328,7 +329,7 @@ body .second_section--wrapper_content h2::before {
   bottom: 150%;
   left: 0;
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .second_section--wrapper_content h2::before {
     bottom: 112%;
   }
@@ -347,7 +348,7 @@ body .second_section--wrapper_content-two .item-card {
     text-align: center;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .second_section--wrapper_content-two .item-card {
     width: 100%;
   }
@@ -378,7 +379,7 @@ body .three_section {
     width: 100%;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .three_section {
     height: 254px;
   }
@@ -394,11 +395,9 @@ body .three_section--content {
     width: 85%;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .three_section--content {
-    display: flex;
-    flex-direction: column;
-    column-count: 0;
+    column-count: auto;
     padding-top: 1%;
   }
 }
@@ -431,6 +430,11 @@ body .three_section--content h2 {
     font-size: 40px;
   }
 }
+@media (max-width: 376px) {
+  body .three_section--content h2 {
+    margin-top: 60px;
+  }
+}
 body .three_section--content .button--view {
   float: right;
   margin-top: 14%;
@@ -440,10 +444,10 @@ body .three_section--content .button--view {
   background: transparent;
   cursor: pointer;
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body .three_section--content .button--view {
     width: 200px;
-    margin: 0 auto;
+    margin: 0 20%;
   }
 }
 @media (max-width: 769px) {
@@ -458,6 +462,11 @@ body footer {
 @media (max-width: 547px) {
   body footer {
     height: 534px;
+  }
+}
+@media (max-width: 376px) {
+  body footer {
+    height: 920px;
   }
 }
 body footer::before {
@@ -476,7 +485,7 @@ body footer::before {
     height: 148px;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body footer::before {
     width: 322px;
     height: 137px;
@@ -494,7 +503,7 @@ body footer .content-footer .profiles_wrapper {
   -webkit-align-items: flex-end;
   border-bottom: 1px solid #9e9aa257;
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body footer .content-footer .profiles_wrapper {
     flex-direction: column;
     -webkit-align-items: center;
@@ -520,6 +529,10 @@ body footer .content-footer .profiles_wrapper .profiles_wrapper--icons .profiles
   background-image: url(../images/icon-facebook.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+body footer .content-footer .profiles_wrapper .profiles_wrapper--icons .profiles_wrapper--icons_facebook:hover, body footer .content-footer .profiles_wrapper .profiles_wrapper--icons .profiles_wrapper--icons_twitter:hover,
+body footer .content-footer .profiles_wrapper .profiles_wrapper--icons .profiles_wrapper--icons_pinterest:hover, body footer .content-footer .profiles_wrapper .profiles_wrapper--icons .profiles_wrapper--icons_instagram:hover {
+  cursor: pointer;
 }
 body footer .content-footer .profiles_wrapper .profiles_wrapper--icons .profiles_wrapper--icons_twitter {
   background-image: url(../images/icon-twitter.svg);
@@ -550,7 +563,7 @@ body footer .content-footer .links_wrapper--items {
     text-align: center;
   }
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body footer .content-footer .links_wrapper--items {
     width: 100%;
   }
@@ -577,7 +590,7 @@ body footer .content-footer .attribution {
   color: #837d87;
   padding-top: 2%;
 }
-@media (max-width: 322px) {
+@media (max-width: 376px) {
   body footer .content-footer .attribution {
     padding-top: 5%;
     padding-bottom: 5%;

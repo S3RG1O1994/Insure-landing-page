@@ -16,9 +16,7 @@
 			@media (max-width: $mini-tablet)
 				width: 85%
 			@media (max-width: $movile)
-				display: flex
-				flex-direction: column
-				column-count: 0
+				column-count: auto
 				padding-top: 1%
 			&::after
 				content: ""
@@ -41,6 +39,8 @@
 				line-height: 77%
 				@media (max-width: $mini-tablet)
 					font-size: 40px
+				@media (max-width: $movile)
+					margin-top: 60px
 			.button--view
 				float: right
 				margin-top: 14%
@@ -51,6 +51,6 @@
 				cursor: pointer
 				@media (max-width: $movile)
 					width: 200px
-					margin: 0 auto
+					margin: 0 20%
 			@media (max-width: $mini-tablet)
 				align-self: center

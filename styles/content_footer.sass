@@ -3,6 +3,8 @@ footer
 	height: 400px
 	@media (max-width: $bg-movile)
 		height: 534px
+	@media (max-width: $movile)
+		height: 920px
 	&::before
 		content: ""
 		position: absolute
@@ -49,6 +51,8 @@ footer
 					background-image: url(../images/icon-facebook.svg)
 					background-repeat: no-repeat
 					background-size: contain
+					&:hover
+						cursor: pointer
 				.profiles_wrapper--icons_twitter
 					background-image: url(../images/icon-twitter.svg)
 				.profiles_wrapper--icons_pinterest

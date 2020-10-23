@@ -448,6 +448,7 @@ body .three_section--content .button--view {
   body .three_section--content .button--view {
     width: 200px;
     margin: 0 20%;
+    align-self: inherit;
   }
 }
 @media (max-width: 769px) {

@@ -457,7 +457,7 @@ body .three_section--content .button--view {
 }
 @media (max-width: 376px) {
   body .three_section--content {
-    align-self: inherit;
+    align-self: auto;
   }
 }
 body footer {
